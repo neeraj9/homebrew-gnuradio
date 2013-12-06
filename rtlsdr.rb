@@ -8,7 +8,7 @@ class Rtlsdr < Formula
   depends_on 'automake' => :build
   depends_on 'libtool' => :build
   depends_on 'cmake' => :build
-  depends_on 'libusb'
+  depends_on 'libusbx'
 
   def install
     args = ["--prefix=#{prefix}"]
