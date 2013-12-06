@@ -2,8 +2,8 @@ require 'formula'
 
 class Gnuradio < Formula
   homepage 'http://gnuradio.org'
-  url  'http://gnuradio.org/releases/gnuradio/gnuradio-3.6.5.1.tar.gz'
-  sha1 '8d3846dc1d00c60b74f06c0bb8f40d57ee257b5a'
+  url  'http://gnuradio.org/releases/gnuradio/gnuradio-3.7.2.tar.gz'
+  sha1 'de498738787612be3f6970b72550cc948c2ee850'
   head 'http://gnuradio.org/git/gnuradio.git'
 
   depends_on 'apple-gcc42' => :build
@@ -21,7 +21,7 @@ class Gnuradio < Formula
   depends_on 'swig'
   depends_on 'pygtk'
   depends_on 'sdl'
-  depends_on 'libusb'
+  depends_on 'libusbx'
   depends_on 'orc'
   depends_on 'pyqt' if ARGV.include?('--with-qt')
   depends_on 'pyqwt' if ARGV.include?('--with-qt')
